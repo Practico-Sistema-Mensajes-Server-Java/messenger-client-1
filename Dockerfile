@@ -19,7 +19,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copiar el archivo JAR generado
-COPY --from=build /app/target/Messenger-Client-1-0.0.1-SNAPSHOT.jar /app/messenger-client-1.jar
+COPY --from=build /app/target/messenger-client-1-0.0.1-SNAPSHOT.jar /app/messenger-client-1.jar
 
 # Descargar y configurar wait-for-it.sh
 RUN apt-get update && apt-get install -y curl && \
