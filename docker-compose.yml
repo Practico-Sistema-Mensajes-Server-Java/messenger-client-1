@@ -6,7 +6,7 @@ services:
       - MYSQL_DATABASE=Messenger-Client-1
       - MYSQL_ROOT_PASSWORD=P@ssw0rd
     ports:
-      - "3318:3306"
+      - "3311:3306"
     networks:
       - backend-network
     healthcheck:
@@ -20,7 +20,7 @@ services:
       context: ./  # Contexto del Dockerfile
     container_name: messenger-client-1
     ports:
-      - "8096:8096"
+      - "8081:8091"
     networks:
       - backend-network
     environment:

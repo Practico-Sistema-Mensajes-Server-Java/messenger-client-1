@@ -22,7 +22,7 @@ spring:
     name: messenger-client-1
 
 server:
-  port: 8096
+  port: 8091
 
 jwt:
   secret: securesecretkey

@@ -27,7 +27,7 @@ RUN apt-get update && apt-get install -y curl && \
     chmod +x /app/wait-for-it.sh
 
 # Exponer el puerto
-EXPOSE 8096
+EXPOSE 8081
 
 # Comando para iniciar la aplicación
 ENTRYPOINT ["./wait-for-it.sh", "mysql-messenger-client-1:3306", "--", "java", "-jar", "/app/messenger-client-1.jar"]
